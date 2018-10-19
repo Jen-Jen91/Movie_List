@@ -1,7 +1,43 @@
 body {
-  font-family: Palatino;
+  font-family: Trebuchet MS;
+}
+
+h1 {
+  text-align: center;
 }
 
 p {
+  text-transform: uppercase;
+}
+
+form {
+  text-align: center;
+  border: 1px solid black;
+}
+
+.form-item {
+  margin: 15px;
+}
+
+.button {
+  margin: 0px 5px 10px 5px;
+}
+
+.rating-button {
+  margin: 5px;
+}
+
+#movie-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.movie-list-item {
+  list-style-type: none;
+  color: white;
+  background-color: #8479A2;
+  border-radius: 25px;
+  padding: 5px 30px 5px 30px;
+  margin: 10px;
   text-transform: capitalize;
 }

@@ -13,59 +13,49 @@
       <div id="form-wrapper">
 
         <div class="form-item">
-          <label for="title">Title:</label>
-          <input type="text" id="title" required/>
+          <label for="title" >Title:</label>
+          <input class="text-input" type="text" id="title" required/>
         </div>
 
         <div class="form-item">
           <label for="genre">Genre:</label>
-          <input type="text" id="genre" required/>
+          <input class="text-input" type="text" id="genre" required/>
         </div>
 
         <div class="form-item">
-          <!-- <label for="rating" class="primary">Rating:</label>
-          <select id="rating">
-            <option value="" disabled selected></option>
-            <option value="u">U</option>
-            <option value="pg">PG</option>
-            <option value="12A">12A</option>
-            <option value="12">12</option>
-            <option value="15">15</option>
-            <option value="18">18</option>
-          </select> -->
 
-          <label for="u" class="primary">U</label>
+          <label for="u" class="rating-button">U</label>
           <input type="radio" id="u" name="rating" value ="u" checked/>
 
-          <label for="pg" class="primary">PG</label>
+          <label for="pg" class="rating-button">PG</label>
           <input type="radio" id="pg" name="rating" value ="pg"/>
 
-          <label for="12A" class="primary">12A</label>
+          <label for="12A" class="rating-button">12A</label>
           <input type="radio" id="12A" name="rating" value ="12a"/>
 
-          <label for="12" class="primary">12</label>
+          <label for="12" class="rating-button">12</label>
           <input type="radio" id="12" name="rating" value ="12"/>
 
-          <label for="15" class="primary">15</label>
+          <label for="15" class="rating-button">15</label>
           <input type="radio" id="15" name="rating" value ="15"/>
 
-          <label for="18" class="primary">18</label>
+          <label for="18" class="rating-button">18</label>
           <input type="radio" id="18" name="rating" value ="18"/>
-
-
 
         </div>
 
       </div>
 
-      <input type="submit" value="SAVE"/>
+      <input class="button" type="submit" value="SAVE"/>
+
+      <button class="button" id="deleteAll" type="button" name="button">DELETE ALL</button>
 
     </form>
 
     <h1>Movies</h1>
     <div id="movie-list"></div>
 
-    <button id="deleteAll" type="button" name="button">DELETE ALL</button>
+
 
   </body>
 </html>
