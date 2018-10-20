@@ -1,18 +1,24 @@
 body {
   font-family: Trebuchet MS;
+  background-color: #E6F4FE;
 }
 
 h1 {
   text-align: center;
+  text-decoration: underline;
+  font-size: 50px;
+  margin-top: 15px;
 }
 
-p {
+h3 {
   text-transform: uppercase;
 }
 
 form {
+  font-weight: bold;
   text-align: center;
-  border: 1px solid black;
+  border: 2px solid black;
+  background-color: Thistle;
 }
 
 .form-item {
@@ -23,7 +29,7 @@ form {
   margin: 0px 5px 10px 5px;
 }
 
-.rating-button {
+.rating-label {
   margin: 5px;
 }
 
@@ -34,10 +40,12 @@ form {
 
 .movie-list-item {
   list-style-type: none;
-  color: white;
-  background-color: #8479A2;
-  border-radius: 25px;
+  text-transform: capitalize;
+  text-align: center;
+  color: black;
+  background-color: PapayaWhip;
+  border: 1px solid black;
+  border-radius: 15px;
   padding: 5px 30px 5px 30px;
   margin: 10px;
-  text-transform: capitalize;
 }
