@@ -7,6 +7,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const deleteAll = document.querySelector("#deleteAll");
   deleteAll.addEventListener("click", handleDeleteAll);
 
+  // const deleteMovie = document.querySelector(".delete-movie-button");
+  // deleteMovie.addEventListener("click", handleDeleteMovie);
+
 });
 
 
@@ -37,6 +40,11 @@ const createMovieListItem = function (form) {
   rating.textContent = form.rating.value;
   movieListItem.appendChild(rating);
 
+  const deleteButton = document.createElement("button");
+  deleteButton.textContent = "Delete Movie";
+  deleteButton.classList.add("delete-movie-button");
+  movieListItem.appendChild(deleteButton);
+
   return movieListItem
 };
 
@@ -45,3 +53,8 @@ const handleDeleteAll = function () {
   const movies = document.getElementById("movie-list");
   movies.textContent = "";
 };
+
+// const handleDeleteMovie = function () {
+//   const movieItem = document.getElementsByClassName("movie-list-item");
+//   movieItem.innerHTML = "";
+// };
