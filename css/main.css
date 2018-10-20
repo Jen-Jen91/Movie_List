@@ -3,17 +3,6 @@ body {
   background-color: #E6F4FE;
 }
 
-h1 {
-  text-align: center;
-  text-decoration: underline;
-  font-size: 50px;
-  margin-top: 15px;
-}
-
-h3 {
-  text-transform: uppercase;
-}
-
 form {
   font-weight: bold;
   text-align: center;
@@ -31,6 +20,17 @@ form {
 
 .rating-label {
   margin: 5px;
+}
+
+h1 {
+  text-align: center;
+  text-decoration: underline;
+  font-size: 50px;
+  margin-top: 15px;
+}
+
+h3 {
+  text-transform: uppercase;
 }
 
 #movie-list {

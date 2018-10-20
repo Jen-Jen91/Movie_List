@@ -1,15 +1,14 @@
-document.addEventListener('DOMContentLoaded', () => {
-  console.log('JavaScript loaded');
+document.addEventListener("DOMContentLoaded", () => {
+  console.log("JavaScript loaded");
 
   const form = document.querySelector("#new-item-form");
   form.addEventListener("submit", handleFormSubmit);
 
-  const deleteAll = document.querySelector("#deleteAll");
+  const deleteAll = document.querySelector("#delete-all");
   deleteAll.addEventListener("click", handleDeleteAll);
 
   // const deleteMovie = document.querySelector(".delete-movie-button");
   // deleteMovie.addEventListener("click", handleDeleteMovie);
-
 });
 
 
@@ -17,10 +16,11 @@ const handleFormSubmit = function (event) {
   event.preventDefault();
 
   const movieListItem = createMovieListItem(event.target);
-  const result = document.querySelector("#movie-list");
-  result.appendChild(movieListItem);
+  const movies = document.querySelector("#movie-list");
+  movies.appendChild(movieListItem);
 
-  document.getElementById('new-item-form').reset();
+  const input = document.getElementById("new-item-form");
+  input.reset();
 };
 
 
@@ -40,12 +40,7 @@ const createMovieListItem = function (form) {
   rating.textContent = form.rating.value;
   movieListItem.appendChild(rating);
 
-  const deleteButton = document.createElement("button");
-  deleteButton.textContent = "Delete Movie";
-  deleteButton.classList.add("delete-movie-button");
-  movieListItem.appendChild(deleteButton);
-
-  return movieListItem
+  return movieListItem;
 };
 
 
@@ -54,7 +49,8 @@ const handleDeleteAll = function () {
   movies.textContent = "";
 };
 
+
 // const handleDeleteMovie = function () {
 //   const movieItem = document.getElementsByClassName("movie-list-item");
-//   movieItem.innerHTML = "";
+//   movieItem.textContent = "";
 // };

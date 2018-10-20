@@ -11,44 +11,41 @@
   <body>
     <form id="new-item-form">
 
+      <div class="form-item">
+        <label for="title" >Title:</label>
+        <input class="text-input" type="text" id="title" required/>
+      </div>
 
-        <div class="form-item">
-          <label for="title" >Title:</label>
-          <input class="text-input" type="text" id="title" required/>
-        </div>
+      <div class="form-item">
+        <label for="genre">Genre:</label>
+        <input class="text-input" type="text" id="genre" required/>
+      </div>
 
-        <div class="form-item">
-          <label for="genre">Genre:</label>
-          <input class="text-input" type="text" id="genre" required/>
-        </div>
+      <div class="form-item">
 
-        <div class="form-item">
+        <label for="u" class="rating-label">U</label>
+        <input type="radio" id="u" name="rating" value ="u" checked/>
 
-          <label for="u" class="rating-label">U</label>
-          <input type="radio" id="u" name="rating" value ="u" checked/>
+        <label for="pg" class="rating-label">PG</label>
+        <input type="radio" id="pg" name="rating" value ="pg"/>
 
-          <label for="pg" class="rating-label">PG</label>
-          <input type="radio" id="pg" name="rating" value ="pg"/>
+        <label for="12A" class="rating-label">12A</label>
+        <input type="radio" id="12A" name="rating" value ="12a"/>
 
-          <label for="12A" class="rating-label">12A</label>
-          <input type="radio" id="12A" name="rating" value ="12a"/>
+        <label for="12" class="rating-label">12</label>
+        <input type="radio" id="12" name="rating" value ="12"/>
 
-          <label for="12" class="rating-label">12</label>
-          <input type="radio" id="12" name="rating" value ="12"/>
+        <label for="15" class="rating-label">15</label>
+        <input type="radio" id="15" name="rating" value ="15"/>
 
-          <label for="15" class="rating-label">15</label>
-          <input type="radio" id="15" name="rating" value ="15"/>
+        <label for="18" class="rating-label">18</label>
+        <input type="radio" id="18" name="rating" value ="18"/>
 
-          <label for="18" class="rating-label">18</label>
-          <input type="radio" id="18" name="rating" value ="18"/>
-
-        </div>
-
-
+      </div>
 
       <input class="button" type="submit" value="SAVE"/>
 
-      <button class="button" id="deleteAll" type="button" name="button">DELETE ALL</button>
+      <button class="button" id="delete-all" type="button" name="button">DELETE ALL</button>
 
     </form>
 
